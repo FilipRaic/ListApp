@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListApp</string>
+    <string name="listItemView">Item</string>
+</resources>
