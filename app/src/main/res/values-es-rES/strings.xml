@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Ladrillos de lego"</string>
+    <string name="listItemView">Ladrillo</string>
+    <string name="detailTextView">Haga clic para más detalles:</string>
+</resources>
