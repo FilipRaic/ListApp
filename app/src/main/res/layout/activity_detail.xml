@@ -34,6 +34,7 @@
         android:id="@+id/imageLink"
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:contentDescription="@string/imageLinkDescription"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
