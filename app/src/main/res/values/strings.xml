@@ -3,4 +3,5 @@
     <string name="listItemView">Brick</string>
     <string name="todo" translatable="false">TODO</string>
     <string name="detailTextView">Click for more details:</string>
+    <string name="imageLinkDescription">description</string>
 </resources>
