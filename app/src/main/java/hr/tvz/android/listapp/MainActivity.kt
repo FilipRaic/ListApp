@@ -1,6 +1,5 @@
 package hr.tvz.android.listapp
 
-import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Intent
 import android.content.IntentFilter
@@ -16,11 +15,13 @@ import androidx.fragment.app.replace
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.messaging.FirebaseMessaging
+import com.google.firebase.messaging.ktx.messaging
 import hr.tvz.android.listapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private val itemsList = ArrayList<ItemParcel>()
+    val itemsList = ArrayList<ItemParcel>()
     private lateinit var binding: ActivityMainBinding
     private lateinit var wifiState: WifiStateReceiver
     private lateinit var dataDAO: DataDAO
@@ -64,6 +65,8 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView?.layoutManager = LinearLayoutManager(applicationContext)
         binding.recyclerView?.adapter = CustomAdapter(itemsList) {
             if (twoPane) {
+                var itemListFragment = ItemListFragment()
+
                 supportFragmentManager.commit {
                     replace<Fragment>(R.id.item_detail_container)
                     setReorderingAllowed(true)
@@ -78,6 +81,7 @@ class MainActivity : AppCompatActivity() {
         prepareItems()
 
         wifiState = WifiStateReceiver()
+        Firebase.messaging.isAutoInitEnabled = true
 
         IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION).also {
             registerReceiver(wifiState, it)
