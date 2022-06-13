@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
         dataDAO = dataBase.todoDao()
 
-        if (findViewById<LinearLayout>(R.id.item_detail_container) != null) {
+        if (findViewById<LinearLayout>(R.id.detail_container) != null) {
             twoPane = true
         }
 
@@ -62,15 +62,12 @@ class MainActivity : AppCompatActivity() {
             })
 
         title = "Lego Bricks"
-        binding.recyclerView?.layoutManager = LinearLayoutManager(applicationContext)
-        binding.recyclerView?.adapter = CustomAdapter(itemsList) {
+        binding.listPane.layoutManager = LinearLayoutManager(applicationContext)
+        binding.listPane.adapter = CustomAdapter(itemsList) {
             if (twoPane) {
-                var itemListFragment = ItemListFragment()
-
                 supportFragmentManager.commit {
-                    replace<Fragment>(R.id.item_detail_container)
+                    replace<ItemFragment>(R.id.detail_container, it)
                     setReorderingAllowed(true)
-                    addToBackStack("name")
                 }
             } else {
                 val intent = Intent(this, DetailActivity::class.java)

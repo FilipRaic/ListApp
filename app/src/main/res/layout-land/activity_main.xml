@@ -1,29 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/list_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:background="@color/lego_yellow"
-    android:baselineAligned="false"
-    android:divider="?android:attr/dividerHorizontal"
-    android:showDividers="middle"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_pane"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/item_list"
-        android:name="hr.tvz.android.listapp.placeholder.BlankFragment"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:id="@+id/detail_container"
+        android:layout_width="300dp"
         android:layout_weight="1"
-        tools:ignore="MissingClass"
-        tools:layout="@android:layout/list_content" />
-
-    <FrameLayout
-        android:id="@+id/item_detail_container"
-        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="3" />
-
-</LinearLayout>
+        android:background="#ff333333"
+        android:name="hr.tvz.android.listapp.placeholder.BlankFragment" />
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
