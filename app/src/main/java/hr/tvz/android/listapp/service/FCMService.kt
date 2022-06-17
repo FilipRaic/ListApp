@@ -1,4 +1,4 @@
-package hr.tvz.android.listapp
+package hr.tvz.android.listapp.service
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -12,6 +12,8 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
+import hr.tvz.android.listapp.R
+import hr.tvz.android.listapp.view.MainActivity
 
 class FCMService : FirebaseMessagingService() {
     val TAG = "FCMService"

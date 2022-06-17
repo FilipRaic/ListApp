@@ -1,4 +1,4 @@
-package hr.tvz.android.listapp
+package hr.tvz.android.listapp.view
 
 import android.app.Activity
 
