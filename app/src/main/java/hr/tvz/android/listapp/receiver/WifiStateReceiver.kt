@@ -1,4 +1,4 @@
-package hr.tvz.android.listapp
+package hr.tvz.android.listapp.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context

@@ -3,5 +3,9 @@
     <string name="listItemView">Brick</string>
     <string name="todo" translatable="false">TODO</string>
     <string name="detailTextView">Click for more details:</string>
-    <string name="imageLinkDescription">description</string>
+    <string name="imageLinkDescription" translatable="false">description</string>
+    <string name="from" translatable="false">From</string>
+    <string name="message" translatable="false">Message</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="default_notification_channel_id">1</string>
 </resources>

@@ -1,4 +1,4 @@
-package hr.tvz.android.listapp
+package hr.tvz.android.listapp.service
 
 import android.os.Handler
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
+import hr.tvz.android.listapp.model.ItemParcel
+import hr.tvz.android.listapp.R
 
 internal class CustomAdapter(private var itemsList: List<ItemParcel>, private val clickListener: (String) -> Unit) :
     RecyclerView.Adapter<CustomAdapter.MyViewHolder>() {

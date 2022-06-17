@@ -1,4 +1,4 @@
-package hr.tvz.android.listapp
+package hr.tvz.android.listapp.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

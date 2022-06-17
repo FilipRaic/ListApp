@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "767785481127",
+    "project_id": "test-22bcc",
+    "storage_bucket": "test-22bcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767785481127:android:ca4c3a019d14d228083c82",
+        "android_client_info": {
+          "package_name": "TestApp.apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767785481127-loaupv8mfa1l7vq5k3871v22omghmba9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpwkAllwdlPuAg1Fesq9Bjrz3CmI7d038"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767785481127-loaupv8mfa1l7vq5k3871v22omghmba9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767785481127:android:d9d768b1173d37e5083c82",
+        "android_client_info": {
+          "package_name": "hr.tvz.android.listapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767785481127-loaupv8mfa1l7vq5k3871v22omghmba9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpwkAllwdlPuAg1Fesq9Bjrz3CmI7d038"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767785481127-loaupv8mfa1l7vq5k3871v22omghmba9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

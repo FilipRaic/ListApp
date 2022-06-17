@@ -1,0 +1,20 @@
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_pane"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detail_container"
+        android:layout_width="300dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#ff333333"
+        android:name="hr.tvz.android.listapp.placeholder.BlankFragment" />
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
